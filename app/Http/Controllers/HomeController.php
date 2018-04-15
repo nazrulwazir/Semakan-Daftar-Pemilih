@@ -21,7 +21,7 @@ class HomeController extends SemakPemilihController
             ]);
 
             $getData = $this->ApiSpr($request->ic);
-
+            // dd($getData);
             if($getData['code'] == 200){
                 swal()->success('Berjaya','Rekod Ditemui',[]);
             }else{

@@ -59,7 +59,11 @@
 
 				<table class="table table-striped table-bordered">                          
 				<thead class="thead-dark"><tr><th colspan="2"> DAFTAR PEMILIH YANG TELAH DISAHKAN </th></tr></thead>                            
-					<tbody>                           
+					<tbody>  
+						<tr>
+						  <th scope="row" width="30%">PENERANGAN</th>
+						  <td>PILIHAN RAYA UMUM KE-14</td>
+						</tr>                            
 						<tr>
 						  <th scope="row" width="30%">Lokaliti</th>
 						  <td>{{ $getData['data']['lokaliti'] }}</td>
@@ -79,6 +83,22 @@
 						<tr>
 							<th scope="row">Negeri</th>
 							<td>{{ $getData['data']['negeri'] }}</td>
+						</tr>
+						<tr>
+							<th scope="row">Pusat Mengundi</th>
+							<td>{{ $getData['data']['pusat_mengundi'] }}</td>
+						</tr>
+						<tr>
+							<th scope="row">Saluran</th>
+							<td>{{ $getData['data']['saluran'] }}</td>
+						</tr>
+						<tr>
+							<th scope="row">Masa Mengundi</th>
+							<td>{{ $getData['data']['masa_mengundi'] }}</td>
+						</tr>
+						<tr>
+							<th scope="row">No Siri</th>
+							<td>{{ $getData['data']['no_siri'] }}</td>
 						</tr>
 															<tr>
 							<td colspan="2" class="text-center muted">{{ $getData['data']['info'] }}</td>
