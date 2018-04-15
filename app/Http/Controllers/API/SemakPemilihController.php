@@ -16,7 +16,7 @@ class SemakPemilihController extends Controller
      */
     public function ApiSpr($ic = null){
 
-        $url = 'https://pengundi.spr.gov.my/';
+        $url = 'http://103.8.163.104';
         $testCurl = $this->get_web_page($url);
 
         if($testCurl['http_code'] == 200){

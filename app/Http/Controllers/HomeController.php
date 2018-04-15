@@ -13,7 +13,8 @@ class HomeController extends SemakPemilihController
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {   
+    {       
+        swal()->button('Saya Faham')->message('Selamat Datang','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
         if($request->isMethod('post')){
 
             $request->validate([
@@ -21,7 +22,7 @@ class HomeController extends SemakPemilihController
             ]);
 
             $getData = $this->ApiSpr($request->ic);
-            // dd($getData);
+
             if($getData['code'] == 200){
                 swal()->success('Berjaya','Rekod Ditemui',[]);
             }else{
