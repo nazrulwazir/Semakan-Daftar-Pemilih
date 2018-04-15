@@ -12,10 +12,30 @@
 						   FB
 						</a>
 					</li>
+					<li>
+						<a href="https://www.instagram.com/nazrulwazir/" target="_blank">
+						   Instagram
+						</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/nazrulwazir/" target="_blank">
+						   LinkedIn
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/nazrulwazir" target="_blank">
+						   Github
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/nazrulwazir" target="_blank">
+						   Twitter
+						</a>
+					</li>
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            &copy; {{ date('Y') }} , Developed by Nazrul Wazir
+	            &copy; {{ date('Y') }}  Developed by Nazrul Wazir
 	        </div>
 	    </div>
 	</footer>
