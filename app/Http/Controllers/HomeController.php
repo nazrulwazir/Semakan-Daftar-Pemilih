@@ -14,7 +14,7 @@ class HomeController extends SemakPemilihController
      */
     public function index(Request $request)
     {       
-        swal()->button('Saya Faham')->message('Selamat Datang','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
+        
         if($request->isMethod('post')){
 
             $request->validate([
@@ -28,7 +28,8 @@ class HomeController extends SemakPemilihController
             }else{
                 swal()->info('Info','Rekod Tidak Ditemui',[]);
             }
-
+        }else{
+            swal()->button('Saya Faham')->message('Selamat Datang','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
         }
         return view('pages.home.index',compact('getData'));
     }
