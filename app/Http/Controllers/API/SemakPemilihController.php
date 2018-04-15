@@ -9,16 +9,6 @@ class SemakPemilihController extends Controller
 {
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function semak(Request $request){
-
-        return $this->ApiSpr($request->ic);
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $ic
@@ -174,7 +164,7 @@ class SemakPemilihController extends Controller
     }
 
     public function return_200($data){
-        return ['code'=>200,'msg'=>'success','data'=>$data];
+        return ['code'=>200,'msg'=>'ok','data'=>$data];
     }
 
 }

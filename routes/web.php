@@ -11,10 +11,10 @@
 |
 */
 
+
 Route::group([
-    'prefix'    => '/',
     'as'        => 'semakan.',
 ], function () {
-
-			Route::resource('/', 'HomeController');
+		Route::any('/', 'HomeController@index')->name('index');
+		Route::any('/semak', 'HomeController@index')->name('index');
 });

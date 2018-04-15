@@ -1,3 +1,3 @@
 <?php
 
-Route::get('V1/semak-pemilih', 'API\SemakPemilihController@semak')->name('semak-pemilih');
+Route::get('V1/semak-pemilih/{ic}', 'API\SemakPemilihController@ApiSpr')->name('semak-pemilih');
