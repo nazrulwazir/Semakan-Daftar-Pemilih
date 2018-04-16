@@ -29,7 +29,6 @@
         {!! Form::close() !!}
 
         @if(Request::isMethod('post'))
-		
 		@if($getData['code'] == 200)						
 		        <table class="table table-striped table-bordered">
 					<thead class="thead-dark"><tr><th colspan="2"> MAKLUMAT PERIBADI PEMILIH</th></tr></thead>
@@ -56,11 +55,7 @@
 
 				<table class="table table-striped table-bordered">                          
 				<thead class="thead-dark"><tr><th colspan="2"> DAFTAR PEMILIH YANG TELAH DISAHKAN </th></tr></thead>                            
-					<tbody>  
-						<tr>
-						  <th scope="row" width="30%">PENERANGAN</th>
-						  <td>PILIHAN RAYA UMUM KE-14</td>
-						</tr>                            
+					<tbody>                         
 						<tr>
 						  <th scope="row" width="30%">Lokaliti</th>
 						  <td>{{ $getData['data']['lokaliti'] }}</td>

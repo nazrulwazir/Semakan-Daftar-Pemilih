@@ -103,7 +103,7 @@
     <div class="collapse navbar-collapse" id="navigation-index">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
-				<a href="{{ URL::to('/') }}">SEMAKAN DAFTAR PEMILIH </a>
+				<a href="{{ URL::to('/') }}">SEMAKAN DAFTAR PEMILIH PRU14 </a>
 			</li>
 			<li>
                 <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API/issues" target="_blank">Have an issue?</a>
@@ -119,7 +119,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
-					<h1 class="title text-center">SEMAKAN DAFTAR PEMILIH</h1>
+					<h1 class="title text-center">SEMAKAN DAFTAR PEMILIH PRU14</h1>
 				</div>
 			</div>
 		</div>
