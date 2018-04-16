@@ -8,6 +8,13 @@ use App\Http\Controllers\Controller;
 class SemakPemilihController extends Controller
 {
 
+    private $base_url;
+
+    public function __construct()
+    {
+        $this->base_url = "http://103.8.163.104";
+    }
+    
     /**
      * Display the specified resource.
      *
@@ -16,19 +23,16 @@ class SemakPemilihController extends Controller
      */
     public function ApiSpr($ic = null){
 
-        $url = 'http://103.8.163.104';
-        $testCurl = $this->get_web_page($url);
+        $requestData = $this->get_web_page($this->base_url);
 
-        if($testCurl['http_code'] == 200){
+        if($requestData['http_code'] == 200){
 
             $dom = new \DOMDocument();
 
             # Parse the HTML
             # The @ before the method call suppresses any warnings that
             # loadHTML might throw because of invalid HTML in the page.
-            @$dom->loadHTML($testCurl['content']);
-
-            // dd($testCurl['content']);
+            @$dom->loadHTML($requestData['content']);
 
             # Iterate over all the <input> tags
             foreach($dom->getElementsByTagName('input') as $input) {
@@ -43,7 +47,7 @@ class SemakPemilihController extends Controller
                             'ic'    => $ic,
                         );
 
-                $getData = $this->get_web_page($url,$data);
+                $getData = $this->get_web_page($this->base_url,$data);
                 $retrieve_data =  $this->retrieve_data($getData['content']);
 
                 return $retrieve_data;

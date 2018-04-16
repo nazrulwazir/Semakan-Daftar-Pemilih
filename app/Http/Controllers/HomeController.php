@@ -8,6 +8,13 @@ use App\Http\Controllers\API\SemakPemilihController as SemakPemilihController;
 class HomeController extends SemakPemilihController
 {
 
+    private $api_url;
+
+    public function __construct()
+    {
+        $this->api_url = \URL::to('api/V1/semak-pemilih/');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -22,7 +29,7 @@ class HomeController extends SemakPemilihController
                 'ic' => 'required|numeric|digits:12',
             ]);
 
-            $url_api = \URL::to('api/V1/semak-pemilih/'.$request->ic);
+            $url_api = $this->api_url.'/'.$request->ic;
             $getdata = file_get_contents($url_api);
             $parsed = json_decode($getdata,true);
 
