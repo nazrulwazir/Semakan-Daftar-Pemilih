@@ -4,7 +4,7 @@
 
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
-		<h2 class="text-center">SILA MASUKKAN NOMBOR KAD PENGENALAN</h2>
+		<h2 class="text-center">SILA MASUKKAN NOMBOR KAD PENGENALAN </h2>
 	</div>
 	
 	<div class="col-md-8 col-md-offset-2">
@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-12">
 					<div class="form-group label-floating is-empty">
-						<label class="control-label">Sila Masukkan No Kad Pengenalan (tanpa "-" atau "space")</label>
+						<label class="control-label"> No Kad Pengenalan (tanpa "-" atau "space")</label>
                         <input id="ic" type="text" class="form-control{{ $errors->has('ic') ? ' is-invalid' : '' }}" name="ic" required autofocus>
 					<span class="material-input"></span></div>
                 </div>
