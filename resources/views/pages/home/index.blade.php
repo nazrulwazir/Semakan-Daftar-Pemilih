@@ -20,7 +20,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
+                <div class="col-md-12 text-center">
                     <button class="btn btn-primary btn-raised btn-md btn-block" type="submit">
 						Semak
 					</button>
