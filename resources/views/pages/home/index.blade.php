@@ -43,7 +43,7 @@
 								  <td>{{ $getData['data']['ic_no'] }}</td>
 								</tr>                               
 								<tr>
-								  <th scope="row">Tarikh Lahir</th>
+								  <th scope="row">Tahun Lahir</th>
 								  <td>{{ $getData['data']['dob'] }}</td>
 								</tr>                           
 								<tr>
