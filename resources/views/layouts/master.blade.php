@@ -157,7 +157,6 @@
 	<script src="{{ asset('assets/js/material-kit.js') }}" type="text/javascript"></script>
 	@include('vendor.sweetalert.cdn') 
 	@include('vendor.sweetalert.view')
-	@yield('after_scripts')
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117607947-1"></script>
 	<script>
@@ -167,5 +166,7 @@
 
 	  gtag('config', 'UA-117607947-1');
 	</script>
+
+	@yield('after_scripts')
 
 </html>
