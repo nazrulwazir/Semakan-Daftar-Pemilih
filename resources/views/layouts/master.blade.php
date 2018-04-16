@@ -81,12 +81,12 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button id="menu-toggle" type="button" class="navbar-toggle" data-target="#navigation-doc">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar bar1"></span>
-        <span class="icon-bar bar2"></span>
-        <span class="icon-bar bar3"></span>
-      </button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	    	</button>
       <a href="{{ URL::to('/') }}">
            <div class="logo-container">
                 <div class="logo">
@@ -100,7 +100,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navigation-doc">
+    <div class="collapse navbar-collapse" id="navigation-index">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
 				<a href="{{ URL::to('/') }}">SEMAKAN DAFTAR PEMILIH </a>
