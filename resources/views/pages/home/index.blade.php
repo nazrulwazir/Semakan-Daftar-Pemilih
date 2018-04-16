@@ -29,85 +29,14 @@
         {!! Form::close() !!}
 
         @if(Request::isMethod('post'))
-		@if($parsed['code'] == 200)
-			<div style="overflow-x:auto;">						
-		        <table class="table table-responsive table-striped table-bordered table-hover">
-					<thead class="thead-dark"><tr><th colspan="2"> MAKLUMAT PERIBADI PEMILIH</th></tr></thead>
-						<tbody>        
-								
-								<tr>
-								  <th scope="row" width="30%">Nama Penuh</th>
-								  <td>{{ $parsed['data']['name'] }}</td>
-								</tr>                               
-								<tr>
-								  <th scope="row">No. Kad Pengenalan</th>
-								  <td>{{ $parsed['data']['ic_no'] }}</td>
-								</tr>                               
-								<tr>
-								  <th scope="row">Tahun Lahir</th>
-								  <td>{{ $parsed['data']['dob'] }}</td>
-								</tr>                           
-								<tr>
-									<th scope="row">Jantina</th>
-									<td>{{ $parsed['data']['gender'] }}</td>
-								</tr>     
-							</tbody>                               
-				</table>
-			</div>
-	
-			<div style="overflow-x:auto;">		
-				<table class="table table-responsive table-striped table-bordered table-hover">                          
-				<thead class="thead-dark"><tr><th colspan="2"> DAFTAR PEMILIH YANG TELAH DISAHKAN </th></tr></thead>                            
-					<tbody>                         
-						<tr>
-						  <th scope="row" width="30%">Lokaliti</th>
-						  <td>{{ $parsed['data']['lokaliti'] }}</td>
-						</tr>                               
-						<tr>
-						  <th scope="row">Daerah Mengundi </th>
-						  <td>{{ $parsed['data']['daerah'] }}</td>
-						</tr>                               
-						<tr>
-						  <th scope="row">DUN</th>
-						  <td>{{ $parsed['data']['dun'] }}</td>
-						</tr>                           
-						<tr>
-							<th scope="row">Parlimen</th>
-							<td>{{ $parsed['data']['parlimen'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Negeri</th>
-							<td>{{ $parsed['data']['negeri'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Pusat Mengundi</th>
-							<td>{{ $parsed['data']['pusat_mengundi'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Saluran</th>
-							<td>{{ $parsed['data']['saluran'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Masa Mengundi</th>
-							<td>{{ $parsed['data']['masa_mengundi'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Bil</th>
-							<td>{{ $parsed['data']['bil'] }}</td>
-						</tr>
-															<tr>
-							<td colspan="2" class="text-center muted">{{ $parsed['data']['info'] }}</td>
-						</tr>
-					</tbody>                                
-			</table>
-		</div>
-		@elseif($parsed['code'] == 204)
-				
-				Rekod Tidak Ditemui.
 
-		@endif
-		
-    @endif
+			@component('components.tables', [
+	                'data_multiple' => 0,
+	                'parsed' => $parsed,
+	            ])
+			@endcomponent
+
+    	@endif
 
     </div>
 </div>

@@ -17,4 +17,6 @@ Route::group([
 ], function () {
 		Route::any('/', 'HomeController@index')->name('index');
 		Route::any('/semak', 'HomeController@index')->name('index');
+
+		Route::any('/multiple', 'HomeController@multiple')->name('multiple');
 });
