@@ -72,6 +72,11 @@
 		.table-shopping .td-name{
 			min-width: 130px;
 		}
+	.table .thead-dark th {
+	    color: #fff;
+	    background-color: #212529;
+	    border-color: #32383e;
+	}
 	</style>
 </head>
 
