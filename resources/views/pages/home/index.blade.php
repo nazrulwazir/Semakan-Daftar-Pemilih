@@ -21,11 +21,8 @@
 
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <button class="btn btn-primary btn-raised" type="submit">
+                    <button class="btn btn-primary btn-raised btn-lg btn-block" type="submit">
 						Semak
-					</button>
-					<button class="btn btn-default btn-raised" type="reset">
-						Semula
 					</button>
                 </div>
             </div>
