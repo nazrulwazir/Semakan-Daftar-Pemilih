@@ -94,8 +94,8 @@
 							<td>{{ $getData['data']['masa_mengundi'] }}</td>
 						</tr>
 						<tr>
-							<th scope="row">No Siri</th>
-							<td>{{ $getData['data']['no_siri'] }}</td>
+							<th scope="row">Bil</th>
+							<td>{{ $getData['data']['bil'] }}</td>
 						</tr>
 															<tr>
 							<td colspan="2" class="text-center muted">{{ $getData['data']['info'] }}</td>

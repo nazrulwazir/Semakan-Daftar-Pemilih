@@ -35,7 +35,7 @@
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            &copy; {{ date('Y') }}  Developed by Nazrul Wazir
+	            An Open Source Project &copy; {{ date('Y') }}  Developed by Nazrul Wazir
 	        </div>
 	    </div>
 	</footer>

@@ -24,12 +24,12 @@ class HomeController extends SemakPemilihController
             $getData = $this->ApiSpr($request->ic);
 
             if($getData['code'] == 200){
-                swal()->button('OK','#9c27b0',false,'btn btn-primary')->success('Berjaya','Rekod Ditemui'); 
+                swal()->success('Berjaya','Rekod Ditemui',[]);
             }else{
-                swal()->button('OK','#9c27b0',false,'btn btn-primary')->error('Kesalahan','Rekod Tidak Ditemui'); 
+                swal()->info('Opps','Rekod Tidak Ditemui',[]);
             }
         }else{
-            swal()->button('Saya Faham','#9c27b0',false,'btn btn-primary')->info('Selamat Datang','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR'); 
+            swal()->button('Saya Faham')->message('Selamat Datang','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
         }
         return view('pages.home.index',compact('getData'));
     }
