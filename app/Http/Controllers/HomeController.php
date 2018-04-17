@@ -20,38 +20,12 @@ class HomeController extends SemakPemilihController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
-    {       
-        
-        if($request->isMethod('post')){
-
-            $request->validate([
-                'ic' => 'required|numeric|digits:12',
-            ]);
-
-            $parsed[] = array(
-                            'ic'        => $request->ic, 
-                            'result'    => $this->fetch_data($request->ic),
-                      );
-
-
-            if($parsed[0]['result']['code'] == 200){
-                swal()->success('Berjaya','Rekod Ditemui',[]);
-            }else{
-                swal()->info('Opps','Rekod Tidak Ditemui',[]);
-            }
-        }else{
-            swal()->button('Saya Faham')->message('PENGAKUAN','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
-        }
-        return view('pages.home.index',compact('parsed'));
-    }
-
-    public function multiple(Request $request){
+    public function index(Request $request){
 
         if($request->isMethod('post')){
 
             $request->validate([
-                'ic.*' => 'required|numeric|digits:12',
+                'ic.*' => 'required|numeric|min:12',
             ]);
 
             foreach ($request->ic as $key => $value) {
@@ -66,7 +40,7 @@ class HomeController extends SemakPemilihController
             swal()->button('Saya Faham')->message('PENGAKUAN','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
         }
 
-        return view('pages.home.multiple',compact('parsed'));
+        return view('pages.home.index',compact('parsed'));
     }
 
     public function fetch_data($ic){

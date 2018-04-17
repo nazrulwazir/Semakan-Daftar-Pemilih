@@ -4,10 +4,10 @@
 			$index = $key+1;
 		@endphp
 
-			<h2 class="text-center">CARIAN {{ $index }} : {{ $getData['ic'] }}  </h2>	
+			<h2 class="text-center">SEMAKAN {{ $index }} : {{ $getData['ic'] }}  </h2>	
 
 			@if($getData['result']['code'] == 200)						
-		        <table class="table table-striped table-bordered">
+		        <table class="table table-hover table-striped table-bordered">
 					<thead class="thead-dark"><tr><th colspan="2"> MAKLUMAT PERIBADI PEMILIH</th></tr></thead>
 						<tbody>        
 								
@@ -30,7 +30,7 @@
 							</tbody>                               
 				</table>
 
-				<table class="table table-striped table-bordered">                          
+				<table class="table table-hover table-striped table-bordered">                          
 					<thead class="thead-dark">
 						<tr>
 							<th colspan="2"> DAFTAR PEMILIH YANG TELAH DISAHKAN </th>

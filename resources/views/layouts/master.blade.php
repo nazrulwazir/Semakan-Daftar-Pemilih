@@ -155,6 +155,7 @@
 
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 	<script src="{{ asset('assets/js/material-kit.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('js/script.js') }}" type="text/javascript"></script>
 	@include('vendor.sweetalert.cdn') 
 	@include('vendor.sweetalert.view')
 	<!-- Global site tag (gtag.js) - Google Analytics -->
