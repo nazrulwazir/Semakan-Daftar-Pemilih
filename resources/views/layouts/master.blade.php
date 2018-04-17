@@ -98,7 +98,7 @@
                     <img src="{{ asset('assets/img/logo.png') }}" alt="Creative Tim Logo">
                 </div>
                 <div class="brand">
-                    Developed By Nazrul Wazir
+                    SEMAKAN DAFTAR PEMILIH
                 </div>
             </div>
       </a>
