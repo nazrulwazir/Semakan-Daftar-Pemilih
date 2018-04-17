@@ -77,6 +77,17 @@
 	    background-color: #212529;
 	    border-color: #32383e;
 	}
+	.logo-container .brand {
+	    font-size: 16px;
+	    color: #FFFFFF;
+	    line-height: 18px;
+	    float: left;
+	    margin-left: 10px;
+	    margin-top: 7px;
+	    width: 148px;
+	    height: 40px;
+	    text-align: left;
+	}
 	</style>
 </head>
 
@@ -98,7 +109,7 @@
                     <img src="{{ asset('assets/img/logo.png') }}" alt="Creative Tim Logo">
                 </div>
                 <div class="brand">
-                    SEMAKAN DAFTAR PEMILIH
+                    SEMAKAN DAFTAR PEMILIH PRU14
                 </div>
             </div>
       </a>

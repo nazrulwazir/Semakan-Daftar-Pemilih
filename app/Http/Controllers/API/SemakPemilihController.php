@@ -53,7 +53,7 @@ class SemakPemilihController extends Controller
                 $getData = $this->get_web_page($this->base_url,$data);
                 
                 $retrieve_data =  $this->retrieve_data($getData['content']);
-
+                
                 return $retrieve_data;
 
             }
