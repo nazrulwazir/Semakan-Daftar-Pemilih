@@ -35,19 +35,23 @@ class SemakPemilihController extends Controller
             @$dom->loadHTML($requestData['content']);
 
             # Iterate over all the <input> tags
-            foreach($dom->getElementsByTagName('input') as $input) {
-                    # Show the attribute value
-                    $getToken = $input->getAttribute('value');
+            foreach ($dom->getElementsByTagName('input') as $link) 
+            {
+                if ($link->getAttribute('name') == 'token') {
+                    $token = $link->getAttribute('value');
+                }
             }
 
-            if(!empty($getToken)){
+            if(!empty($token)){
 
                 $data = array(
-                            'token' => $getToken,
+                            'token' => $token,
                             'ic'    => $ic,
+                            'trap'  =>'trap_spr',
                         );
 
                 $getData = $this->get_web_page($this->base_url,$data);
+                
                 $retrieve_data =  $this->retrieve_data($getData['content']);
 
                 return $retrieve_data;
