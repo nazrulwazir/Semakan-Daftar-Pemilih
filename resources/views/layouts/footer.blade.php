@@ -4,7 +4,7 @@
 	            <ul>
 					<li>
 						<a href="https://nazrulwazir.com/" target="_blank">
-						   About Me
+						   Tentang Saya
 						</a>
 					</li>
 					<li>
@@ -35,7 +35,7 @@
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            An Open Source Project &copy; {{ date('Y') }}  Developed by Nazrul Wazir
+	            Projek Sumber Terbuka &copy; {{ date('Y') }}  Dibangunkan oleh Nazrul Wazir
 	        </div>
 	    </div>
 	</footer>

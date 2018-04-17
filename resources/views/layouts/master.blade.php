@@ -119,10 +119,7 @@
     <div class="collapse navbar-collapse" id="navigation-index">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
-				<a href="{{ URL::to('/') }}">SEMAKAN DAFTAR PEMILIH PRU14 </a>
-			</li>
-			<li>
-                <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API/issues" target="_blank">Have an issue?</a>
+                <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API/issues" target="_blank">Lapor Masalah</a>
             </li>
     	</ul>
 
