@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\API\SemakPemilihController as SemakPemilihController;
 
-class HomeController extends SemakPemilihController
+class HomeController extends Controller
 {
 
     private $api_url;
@@ -32,7 +31,7 @@ class HomeController extends SemakPemilihController
                 $parsed[] = array(
                                 'ic'        => $value, 
                                 'result'    => $this->fetch_data($value),
-                          );
+                        );
             }
 
             swal()->success('Berjaya','Senarai Rekod',[]);

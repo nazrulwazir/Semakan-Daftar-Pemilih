@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-
+<style type="text/css">
+	.modal-backdrop {
+	  z-index: -1;
+	}
+</style>
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 		<h2 class="text-center">SILA MASUKKAN NOMBOR KAD PENGENALAN </h2>
@@ -48,6 +52,26 @@
     	@endif
 
     </div>
+</div>
+
+<!-- Modal Core -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Cara guna API</h4>
+      </div>
+      <div class="modal-body">
+      	<h4>Untuk dapatkan data semakan</h4>
+        <pre>https://semakan.nazrulwazir.com/api/V1/semak-pemilih/<span class="text-danger">{ic_num}</span> <b>ATAU</b> fork melalui <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API" target="_blank">Github</a>
+		</pre>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 @endsection
