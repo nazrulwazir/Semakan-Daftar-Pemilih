@@ -6,7 +6,21 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-
+	<meta name="google-site-verification" content="kJ1e0f5YjyRW89or4vbHsn_ou6Gdh75lHuwl26l5DCs" />
+	<meta name="robots" content="index,follow">
+    <meta name="google" content="notranslate">
+    
+    <meta name="keywords" content="Semakan Daftar Pemilih PRU14">
+    
+    <meta name="description" content="Semakan Daftar Pemilih PRU14">
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Semakan Daftar Pemilih PRU14">
+    <meta property="og:description" content="Semakan Daftar Pemilih PRU14">
+    <meta property="og:url" content="https://semakan.nazrulwazir.com/">
+    <meta property="og:site_name" content="Semakan Daftar Pemilih PRU14">
+    <meta property="og:image" content="https://semakan.nazrulwazir.com/assets/img/logo.png">
 	<title>SEMAKAN DAFTAR PEMILIH BY NAZRUL WAZIR</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
