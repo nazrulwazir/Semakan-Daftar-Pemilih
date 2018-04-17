@@ -9,7 +9,7 @@
 	
 	<div class="col-md-8 col-md-offset-2">
 		 						
-        {!! Form::open(['route' => 'semakan.index', 'class' => 'contact-form' , 'method'=>'POST'] ) !!}
+        {!! Form::open(['route' => 'semakan.index', 'class' => 'contact-form form' , 'method'=>'POST'] ) !!}
 
         <div class="field_wrapper">
         	<div class="row">
@@ -31,7 +31,7 @@
 
             <div class="row">
                 <div class="col-md-11 text-center">
-                    <button class="btn btn-primary btn-raised btn-md btn-block" type="submit">
+                    <button class="btn btn-primary btn-raised btn-md btn-block btnSubmit" type="submit">
 						Semak
 					</button>
                 </div>

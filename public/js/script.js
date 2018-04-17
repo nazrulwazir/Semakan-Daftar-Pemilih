@@ -1,4 +1,15 @@
-﻿$(document).ready(function(){
+﻿$(".form").submit(function(e)
+{
+    var form = $(this).parents('form');
+    swal({
+         title: 'Semak Data.Sila Tunggu',
+         allowOutsideClick: false,
+    });
+    swal.showLoading();
+    
+});
+
+$(document).ready(function(){
 var maxField = 10; //Input fields increment limitation
 var addMoreButton = $('.addMore'); //Add button selector
 var wrapper = $('.field_wrapper'); //Input field wrapper
