@@ -2,7 +2,7 @@
 {
     var form = $(this).parents('form');
     swal({
-         title: 'Semak Data.Sila Tunggu',
+         title: 'Menyemak Data...',
          allowOutsideClick: false,
     });
     swal.showLoading();
