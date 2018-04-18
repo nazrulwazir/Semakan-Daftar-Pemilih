@@ -64,7 +64,7 @@
       </div>
       <div class="modal-body">
       	<h4>Untuk dapatkan data semakan</h4>
-        <pre>https://semakan.nazrulwazir.com/api/V1/semak-pemilih/<span class="text-danger">{ic_num}</span> <b>ATAU</b> fork melalui <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API" target="_blank">Github</a>
+        <pre>https://semakan.nazrulwazir.com/api/V2/semak-pemilih/<span class="text-danger">{ic_num}</span> <b>ATAU</b> fork melalui <a href="https://github.com/nazrulwazir/Semakan-Daftar-Pemilih-API" target="_blank">Github</a>
 		</pre>
       </div>
       <div class="modal-footer">
