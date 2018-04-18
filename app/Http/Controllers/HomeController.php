@@ -11,7 +11,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->api_url = \URL::to('api/V1/semak-pemilih/');
+        $this->api_url = \URL::to('api/V2/semak-pemilih/');
     }
 
     /**
@@ -33,8 +33,7 @@ class HomeController extends Controller
                                 'result'    => $this->fetch_data($value),
                         );
             }
-
-            swal()->success('Berjaya','Senarai Rekod',[]);
+            swal()->success('INFO','** Maklumat semakan adalah Daftar Pemilih bagi tujuan Pilihan Raya Umum Ke-14 yang diwartakan pada 10 April 2018 **',[]);
         }else{
             swal()->button('Saya Faham')->message('PENGAKUAN','Segala rekod anda tidak disimpan ke dalam sistem ini.Sistem ini hanya alternatif semakan selain laman rasmi SPR','info'); 
         }
