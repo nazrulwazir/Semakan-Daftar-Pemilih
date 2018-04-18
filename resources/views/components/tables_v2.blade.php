@@ -96,6 +96,14 @@
 							</table>
 				@endif
 			@else
-					{{ $getData['result']['error'] }}
+					<table class="table table-hover table-striped table-bordered">
+						<thead class="thead-dark"><tr><th colspan="2"> {{ $getData['result']['error'] }}</th></tr></thead>
+							<tbody>        
+								<tr>
+								  <th scope="row" width="30%">Info</th>
+								  <td> {{ $getData['result']['error'] }}</td>
+								</tr>    
+							</tbody>                               
+					</table>
 			@endif
 	@endforeach
