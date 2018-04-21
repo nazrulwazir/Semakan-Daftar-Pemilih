@@ -1,9 +1,9 @@
-### Semakan Daftar Pemilih API
+### Semakan Daftar Pemilih
 
 # Installation
 - Download or Clone this repository
 ```
-git clone git@github.com:nazrulwazir/Semakan-Daftar-Pemilih-API.git
+git clone git@github.com:nazrulwazir/Semakan-Daftar-Pemilih.git
 ```
 - Copy or rename file ```.env.example``` to ```.env```
 -  Open up Command Prompt(CMD) or Terminal in the project directory and run these commands:
