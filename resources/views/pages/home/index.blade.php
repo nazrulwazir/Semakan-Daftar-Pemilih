@@ -44,7 +44,7 @@
 
         @if(Request::isMethod('post'))
 			
-			@component('components.tables_v2', [
+			@component('components.tables', [
 	                'parsed' => $parsed,
 	            ])
 			@endcomponent

@@ -11,7 +11,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->api_url = \URL::to('api/V2/semak-pemilih/');
+        $this->api_url = \URL::to('api/V1/semak-pemilih/');
     }
 
     /**

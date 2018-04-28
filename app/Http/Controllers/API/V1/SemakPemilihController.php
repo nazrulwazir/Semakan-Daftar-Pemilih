@@ -12,7 +12,7 @@ class SemakPemilihController extends Controller
 
     public function __construct()
     {
-        $this->base_url = "http://103.8.163.104";
+        $this->base_url = "https://pengundi.spr.gov.my/";
     }
     
     /**
@@ -24,7 +24,7 @@ class SemakPemilihController extends Controller
     public function ApiSpr($ic = null){
 
         $requestData = $this->get_web_page($this->base_url);
-
+        
         if($requestData['http_code'] == 200){
 
             $dom = new \DOMDocument();
