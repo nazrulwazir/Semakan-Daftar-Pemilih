@@ -1,9 +1,9 @@
-### Semakan Daftar Pemilih API
+### Semakan Daftar Pemilih
 
 # Installation
 - Download or Clone this repository
 ```
-git clone git@github.com:nazrulwazir/Semakan-Daftar-Pemilih-API.git
+git clone git@github.com:nazrulwazir/Semakan-Daftar-Pemilih.git
 ```
 - Copy or rename file ```.env.example``` to ```.env```
 -  Open up Command Prompt(CMD) or Terminal in the project directory and run these commands:
@@ -17,7 +17,7 @@ php artisan serve
 ```
 
 How to use:
-* ```http://site.com/api/V1/semak-pemilih/{icNum}```
+* ```http://site.com/api/V2/semak-pemilih/{icNum}```
 * where ```icNum``` is your identity card number
 * It will then return a JSON formatted string, you can parse the JSON string and do what you want with it.
 
