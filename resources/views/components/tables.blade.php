@@ -58,23 +58,7 @@
 							<td>{{ $getData['result']['data']['negeri'] }}</td>
 						</tr>
 						<tr>
-							<th scope="row">Pusat Mengundi</th>
-							<td>{{ $getData['result']['data']['pusat_mengundi'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Saluran</th>
-							<td>{{ $getData['result']['data']['saluran'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Masa Mengundi</th>
-							<td>{{ $getData['result']['data']['masa_mengundi'] }}</td>
-						</tr>
-						<tr>
-							<th scope="row">Bil</th>
-							<td>{{ $getData['result']['data']['bil'] }}</td>
-						</tr>
-															<tr>
-							<td colspan="2" class="text-center muted">{{ $getData['result']['data']['info'] }}</td>
+							<td colspan="2" class="text-center muted">{{ $getData['result']['data']['status'] }}</td>
 						</tr>
 					</tbody>                                
 				</table>

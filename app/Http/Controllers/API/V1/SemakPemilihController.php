@@ -149,11 +149,7 @@ class SemakPemilihController extends Controller
             $data['dun'] = strip_tags($aDataTableDetailHTML[0][6]);
             $data['parlimen'] = strip_tags($aDataTableDetailHTML[0][7]);
             $data['negeri'] = strip_tags($aDataTableDetailHTML[0][8]);
-            $data['pusat_mengundi'] = strip_tags($aDataTableDetailHTML[0][9]);
-            $data['saluran'] = strip_tags($aDataTableDetailHTML[0][10]);
-            $data['masa_mengundi'] = strip_tags($aDataTableDetailHTML[0][11]);
-            $data['bil'] = strip_tags($aDataTableDetailHTML[0][12]);
-            $data['info'] = strip_tags($aDataTableDetailHTML[0][13]);
+            $data['status'] = strip_tags($aDataTableDetailHTML[0][9]);
 
             return $this->return_200($data);
 
