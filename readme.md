@@ -17,7 +17,7 @@ php artisan serve
 ```
 
 How to use:
-* ```http://site.com/api/V2/semak-pemilih/{icNum}```
+* ```http://site.com/api/V1/semak-pemilih/{icNum}```
 * where ```icNum``` is your identity card number
 * It will then return a JSON formatted string, you can parse the JSON string and do what you want with it.
 
